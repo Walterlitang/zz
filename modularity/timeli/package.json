@@ -1,0 +1,7 @@
+{
+    "name":"timesli",
+    "version": "1.0.0",
+    "main":"index.js",
+    "description": "这是一个格式化时间的npm包",
+    "keywords": ["time","format"]
+}

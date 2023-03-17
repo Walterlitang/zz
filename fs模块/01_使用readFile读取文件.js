@@ -8,4 +8,4 @@ fs.readFile("./1.t0xt","utf-8",function(err,data){
         return console.log(err.message);
     }
     console.log("读取成功！",data);
-})
+}) 
