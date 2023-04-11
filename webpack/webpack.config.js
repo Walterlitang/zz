@@ -1,0 +1,30 @@
+const path=require("path");
+module.exports={
+    //文件入口
+    entry:"./src/main.js",
+    //文件的输出路径
+    output:{
+        path:path.resolve(__dirname,"dist"),//文件路径
+        filename:"main.js"//文件名
+    },
+    //加载器
+    module:{
+        rules:[
+            //loader配置
+            {
+                test:/\.css$/,
+                use:["style-loader","css-loader"]
+            },
+            {
+                test:/\.less$/,
+                use:["style-loader","css-loader","less-loader"]
+            }
+        ]
+    },
+    //插件
+    plugins:[
+
+    ],
+    //模式
+    mode:"development"
+}
