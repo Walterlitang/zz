@@ -6,5 +6,6 @@ console.log("count",count);
 console.log("sum",sum);
 console.log(count(10,20));
 console.log(sum.count(10,21,32));
+console.log(123);
 
 
