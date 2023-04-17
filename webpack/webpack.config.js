@@ -18,6 +18,19 @@ module.exports={
             {
                 test:/\.less$/,
                 use:["style-loader","css-loader","less-loader"]
+            },
+            {
+                test:/\.styl$/,
+                use:["style-loader","css-loader","stylus-loader"]
+            },
+            {
+                test:/\.(png|jpe?g|gif|webp|svg)$/,
+                type:"asset",
+                parser:{
+                    dataUrlCondition:{
+                        maxSize:10*1024,
+                    }
+                }
             }
         ]
     },

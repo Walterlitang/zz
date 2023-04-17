@@ -1,7 +1,9 @@
 import count from "./js/count";
 import sum from "./js/sum";
-import "./css/count.css";
-import "../less/count.less"
+import "../public/assets/css/count.css";
+import "../public/assets/less/count.less";
+import "../public/assets/stylus/index.styl";
+
 console.log("count",count);
 console.log("sum",sum);
 console.log(count(10,20));
